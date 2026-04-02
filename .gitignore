@@ -1,0 +1,62 @@
+# =========================
+# PYTHON
+# =========================
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+
+# Environnements virtuels
+venv/
+.env/
+.venv/
+env/
+
+# =========================
+# SPARK / BIG DATA
+# =========================
+# Fichiers générés par Spark
+*.crc
+*.log
+*.out
+
+# Dossiers temporaires Spark
+spark-warehouse/
+metastore_db/
+derby.log
+
+# Fichiers générés Spark
+part-*.csv
+_SUCCESS
+
+# =========================
+# DATA 
+# =========================
+data/processed/
+data/output/
+
+# =========================
+# IDE / EDITORS
+# =========================
+.vscode/
+.idea/
+.dist/
+*.iml
+
+# =========================
+# OS
+# =========================
+.DS_Store
+Thumbs.db
+
+# =========================
+# LOGS
+# =========================
+logs/
+*.log
+
+# =========================
+# CONFIG SENSIBLE 
+# =========================
+.env

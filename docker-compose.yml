@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  spark-app:
+    build: .
+    container_name: telecom_analytics
+    volumes:
+      # On monte le dossier output pour récupérer les résultats sur la machine hôte
+      - ./data/output:/app/data/output
+      # On monte les logs
+      - ./logs:/app/logs
+    environment:
+      - SPARK_WORKER_MEMORY=4g
